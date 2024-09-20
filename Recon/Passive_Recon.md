@@ -39,7 +39,7 @@ Scanning a domain
   * Some bash commands to extract desirable information
     ``` jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq >> ../../../target_domains.txt ```
     ``` awk -F '::' {(for i=0, i<=NF, i++) print $i} ```
-  [Github Link](https://github.com/Dheerajmadhukar/karma_v2)                       
+    [https://github.com/Dheerajmadhukar/karma_v2](https://github.com/Dheerajmadhukar/karma_v2)                       
     
 
     
