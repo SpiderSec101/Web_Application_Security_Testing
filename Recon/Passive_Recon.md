@@ -39,8 +39,7 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 ### 8. Favicon
   * [favfreak](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#favfreak)
   * [Murmur Hash](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
-### 9. Note
-After gathering all the apex domains and subdomains use ```httprobe``` to identify which of them are live.
+### 9. Live Subdomains
   * [httprobe](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
 ### 10. Backend Technologies
   * [wappalyzer Extension](https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
