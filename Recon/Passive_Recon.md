@@ -19,6 +19,8 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [whoxy](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#whoxy)
   * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#adanalytics-tracker-code)
   * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github)
+### 4. Dorks
+  * [Github Dorks](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github-dorks)
 
 
 ---  
@@ -70,16 +72,21 @@ Scanning a domain
 
     https://api.whoxy.com/?key=<your_api_key_here>&reverse=whois&keyword=<company_name_here>&mode=domains
 #### Ad/Analytics Tracker Code
-[https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
+[https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)  
 You are going to need the cookie of your [https://pro.builtwith.com/](https://pro.builtwith.com/) account.
 
     python3 getrelationship.py example.com <the-builwith-cookie>
 #### Github
-[https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)
+[https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)  
 Your can get your github api key from ```https://github.com/settings/tokens```
 
-    github-subdomains -d tesla.com -t github_api_key_here -o outputfile.txt
+    github-subdomains -d example.com -t github_api_key_here -o outputfile.txt
 You can checkout other github enumerating tools from here [https://10degres.net/github-tools-collection/](https://10degres.net/github-tools-collection/)
+#### Github Dorks
+[https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
+
+    bash Gdorklink.sh example.com 
+
      
     
     
