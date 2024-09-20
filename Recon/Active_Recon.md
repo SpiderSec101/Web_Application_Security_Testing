@@ -4,23 +4,28 @@
 * Here I have made a list of tools that helps to recon actively.  
 * The list shows what type of informations I am trying to extract and to acheive that what kind of tools I am using. I also guide on how to use a tool.
 
-#### 1. Domain Registration Information
+### 1. Domain Registration Information
   * whois
-#### 2. DNS Lookup and Querying
+### 2. DNS Lookup and Querying
   * dig
   * host
-#### 3. DNS Enumeration
+### 3. DNS Enumeration
   * dnsrecon
   * dnsenum
   * fierce
-#### 4. Web Application Firewall
+### 4. Web Application Firewall
   * wafw00f
-#### 5. Subdomains and Endpoints
+### 5. Subdomains and Endpoints
   * gospider
   * hakrawler
   * katana
   * linkfinder.py
   * SubDomainizer
+
+### Tools  
+#### whois
+    whois example.com
+  
          
 
 
