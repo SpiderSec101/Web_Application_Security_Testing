@@ -28,6 +28,12 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [amass enum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-enum)
   * [subfinder](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#subfinder)
   * [bbot](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#bbot)
+### 6. Subdomain Bruteforcing
+  * [wordlists.txt](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#wordliststxt)
+  * [resolvers.txt](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#resolverstxt)
+  * [amass enum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-enum)
+  * [puredns](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#puredns)
+  * [dnsshuffle](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shuffledns)
 
 
 
@@ -153,6 +159,9 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
   * Enumerating Subdomains
 
         amass enum -d example.com
+  * Subdomain Bruteforcing
+
+        amass enum -brute -d example.com -w wordlists.txt -r resolvers.txt  
     
 #### subfinder
     subfinder -d example.com -o output.txt
@@ -174,7 +183,27 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
 
         bbot -m otx -t example.com
 
-####     
+#### resolvers.txt
+   * resolvers.txt is a file that contains a list of DNS resolvers (i.e., DNS servers) that differen tools will use to perform DNS lookups. Each line in the file represents the IP address of a DNS resolver.  
+  * You can download the text file from here [https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt](https://github.com/blechschmidt/massdns/blob/master/lists/resolvers.txt)
+
+#### wordlists.txt
+  * SecLists
+  * all.txt from [https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056)
+
+#### puredns
+[https://github.com/d3mondev/puredns](https://github.com/d3mondev/puredns)  
+
+    puredns bruteforce wordlists.txt example.com -r resolvers.txt -w output.txt
+
+#### shuffledns    
+[https://github.com/projectdiscovery/shuffledns](https://github.com/projectdiscovery/shuffledns)
+
+    shiffledns -d company.com -w wrodlist.txt -r resolvers.txt
+
+    
+
+
 
     
     
