@@ -39,6 +39,14 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 ### 8. Favicon
   * [favfreak](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#favfreak)
   * [Murmur Hash](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
+### 9. Note
+After gathering all the apex domains and subdomains use ```httprobe``` to identify which of them are live.
+  * [httprobe](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
+### 10. Backend Technologies
+  * [wappalyzer Extension](https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
+  * [built-with Extension](https://chromewebstore.google.com/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn?hl=en)
+  * [whatruns Extension](https://chromewebstore.google.com/detail/whatruns/cmkdbmfndkfgebldhnkbfhlneefdaaip?hl=en)
+  * [webanalyze](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#webanalyze)
 
 
 ---  
@@ -227,7 +235,16 @@ Provide all of the subdomains and apex domains you enumerated to the dnsgen.
 
          curl -s <path_to_the_favicon.ico_file> | base64 | python3 -c 'import mmh3, sys;print(mmh3.hash(sys.stdin.buffer.read()))' | xargs -I{} shodansearch http.favicon.hash:{} --fields hostnames | tr ";" "\n"
 
-#### 
+#### httprobe
+    cat all_subdomains.txt | httprobe > live_domains.txt
+
+#### webanalyze
+[https://github.com/rverton/webanalyze](https://github.com/rverton/webanalyze)
+
+    webanalyze -host www.linkedin.com -crawl 1
+
+    
+    
     
 
 
