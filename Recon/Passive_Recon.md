@@ -43,6 +43,8 @@ Scanning a domain
   * Some bash commands to extract desirable information
 
         jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq >> ../../../target_domains.txt
+
+    
         awk -F '::' {(for i=0, i<=NF, i++) print $i}
 #### Cloud
 [https://kaeferjaeger.gay/](https://kaeferjaeger.gay/)
@@ -55,7 +57,9 @@ Scanning a domain
   * After downloading the text file you can apply these bash scripts to extract data out of it
 
           cat *.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u
-        cat amazon/ipv4_merged_sni.txt digitalocean/ipv4_merged_sni.txt google/ipv4_merged_sni.txt microsoft/ipv4_merged_sni.txt oracle/ipv4_merged_sni.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u > cloud.subdomains.txt
+
+    
+          cat amazon/ipv4_merged_sni.txt digitalocean/ipv4_merged_sni.txt google/ipv4_merged_sni.txt microsoft/ipv4_merged_sni.txt oracle/ipv4_merged_sni.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u > cloud.subdomains.txt
 
     
     
