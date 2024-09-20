@@ -46,11 +46,11 @@
    This tool used to crawl the webiste recursively. Here -w is used for the adding the subdomains inscope, -d is used for depth control. -d 0 is used for the infinite recurse and by default set to 1.
 #### hakrawler 
     echo 'example.com' | hakrawler -subs -d 3
-#### katana [<Github-Link>](https://github.com/projectdiscovery/katana)
+#### katana [<Github Link>](https://github.com/projectdiscovery/katana)
     katana -u https://example.com
-#### LinkFinder [<Github-Link>](https://github.com/GerbenJavado/LinkFinder)
+#### LinkFinder [<Github Link>](https://github.com/GerbenJavado/LinkFinder)
     pytohn3 linkfinder.py -i https:/example.com -d
-#### SubDomainizer [<Github-Link>](https://github.com/nsonaniya2010/SubDomainizer)
+#### SubDomainizer [<Github Link>](https://github.com/nsonaniya2010/SubDomainizer)
     python3 SubDomainizer.py -u https://example.com
 #### httrack
     httrack
