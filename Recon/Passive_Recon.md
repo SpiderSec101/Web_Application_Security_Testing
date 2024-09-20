@@ -3,7 +3,20 @@
 * Here I have made a list which helps me in passive recon.
 * I have metioned what we want to extract and different processes and tool to do so.
 ---  
-###   * Acquisitions
+### 1. Acquisitions
   * [Crunchbase](https://www.crunchbase.com/)
-### 2.    
+### 2. ASN (Auonomous System Numbers)
+It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
+  * [Hurricane Electric BGP Toolkit](https://bgp.he.net/)
+  * [BGP View API]()
+  * [Nmap]()
+
+
+---  
+### Tools:
+#### BGP View API
+    curl -s https://api.bgpview.io/search?query_term=tesla | jq -r | grep -i asn
+#### Nmap  
+    nmap -sV --script=target-asn -T3 -Pn tesla.com
+Nmap provides a script called tergets-asn which is used to enumerate teh ASN  
     
