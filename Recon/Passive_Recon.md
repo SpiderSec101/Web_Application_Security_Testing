@@ -3,6 +3,7 @@
 * Here I have made a list which helps me in passive recon.
 * I have metioned what we want to extract and different processes and tool to do so.
 ---  
-### 1. Acquisitions
+###   * Acquisitions
   * [Crunchbase](https://www.crunchbase.com/)
+### 2.    
     
