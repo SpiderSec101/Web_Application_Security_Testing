@@ -9,14 +9,18 @@
 It is a unique identifier assigned to an Autonomous System (AS), which is a collection of IP networks under a single administrative entity, such as an ISP or a large organization.
   * [Hurricane Electric BGP Toolkit](https://bgp.he.net/)
   * [BGP View API](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#bgp-view-api)
-  * [Nmap](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#Nmap)
+  * [Nmap](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#nmap)
+### 3. Domains from ASN    
+  * [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-intel)
 
 
 ---  
 ### Tools:
 #### BGP View API
-    curl -s https://api.bgpview.io/search?query_term=tesla | jq -r | grep -i asn
+    curl -s https://api.bgpview.io/search?query_term=<company_name> | jq -r | grep -i asn
 #### Nmap  
-    nmap -sV --script=target-asn -T3 -Pn tesla.com
+    nmap -sV --script=target-asn -T3 -Pn example.com
 Nmap provides a script called tergets-asn which is used to enumerate teh ASN  
+#### amass intel
+    amass intel -asn 1234
     
