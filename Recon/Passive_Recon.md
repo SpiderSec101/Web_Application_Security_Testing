@@ -50,7 +50,7 @@ After gathering all the apex domains and subdomains use ```httprobe``` to identi
 ### 11. Others
   * [dnsdumpster.com](https://dnsdumpster.com)
   * [sitereport.netcraft.com](https://sitereport.netcraft.com/)
-  * [hackertarget.com/domain-profiler](https://hackertarget.com/domain-profiler/)
+  * [hackertarget.com](https://hackertarget.com/domain-profiler/)
 
 
 ---  
