@@ -19,6 +19,7 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [whoxy](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#whoxy)
   * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#adanalytics-tracker-code)
   * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github)
+  * [SubreconGPT](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#subrecongpt)
 ### 4. Dorks
   * [Github Dorks](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github-dorks)
 
@@ -27,18 +28,23 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 ### Tools:
 #### BGP View API
     curl -s https://api.bgpview.io/search?query_term=<company_name> | jq -r | grep -i asn
+    
 #### Nmap  
     nmap -sV --script=target-asn -T3 -Pn example.com
 Nmap provides a script called tergets-asn which is used to enumerate teh ASN  
+
 #### amass intel
     amass intel -asn 1234
+
 #### shodan
     shodan domain -D example.com -S
 Scanning a domain
+
 #### shosubgo  
    [https://github.com/incogbyte/shosubgo](https://github.com/incogbyte/shosubgo)  
    
        shosubgo -d example.com -s shodan_api_key_here
+
 #### karma_v2  
 [https://github.com/Dheerajmadhukar/karma_v2](https://github.com/Dheerajmadhukar/karma_v2)  
   * Setting-up the api key in the same directory of karma_v2 bash file
@@ -53,6 +59,7 @@ Scanning a domain
 
     
         awk -F '::' {(for i=0, i<=NF, i++) print $i}
+
 #### Cloud
 [https://kaeferjaeger.gay/](https://kaeferjaeger.gay/)
   * This site scan all wellknown cloud service providers every week and pull down IPs SSL Certificates
@@ -67,21 +74,33 @@ Scanning a domain
 
     
           cat amazon/ipv4_merged_sni.txt digitalocean/ipv4_merged_sni.txt google/ipv4_merged_sni.txt microsoft/ipv4_merged_sni.txt oracle/ipv4_merged_sni.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u > cloud.subdomains.txt
+
 #### whoxy
 [whoxy.com](https://www.whoxy.com/)
 
     https://api.whoxy.com/?key=<your_api_key_here>&reverse=whois&keyword=<company_name_here>&mode=domains
-#### Ad/Analytics Tracker Code
+
+#### Ad/Analytics Tracker Code  
+
 [https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)  
 You are going to need the cookie of your [https://pro.builtwith.com/](https://pro.builtwith.com/) account.
 
     python3 getrelationship.py example.com <the-builwith-cookie>
+    
 #### Github
-[https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)  
+[https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)    
+
 Your can get your github api key from ```https://github.com/settings/tokens```
 
     github-subdomains -d example.com -t github_api_key_here -o outputfile.txt
 You can checkout other github enumerating tools from here [https://10degres.net/github-tools-collection/](https://10degres.net/github-tools-collection/)
+
+#### SubreconGPT
+  * First install the chaos-client from here [https://github.com/projectdiscovery/chaos-client](https://github.com/projectdiscovery/chaos-client)
+  * Then download the python script from here [https://github.com/jhaddix/SubreconGPT](https://github.com/jhaddix/SubreconGPT)
+
+        chaos -d example.com | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
+
 #### Github Dorks
 [https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
 
