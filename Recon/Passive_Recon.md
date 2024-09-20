@@ -29,7 +29,7 @@ Nmap provides a script called tergets-asn which is used to enumerate teh ASN
     shodan domain -D example.com -S
 Scanning a domain
 #### shosubgo  
-   [Github Link](https://github.com/incogbyte/shosubgo)  
+   [https://github.com/incogbyte/shosubgo](https://github.com/incogbyte/shosubgo)  
    
        shosubgo -d example.com -s shodan_api_key_here
 #### karma_v2  
@@ -60,7 +60,23 @@ Scanning a domain
 
     
           cat amazon/ipv4_merged_sni.txt digitalocean/ipv4_merged_sni.txt google/ipv4_merged_sni.txt microsoft/ipv4_merged_sni.txt oracle/ipv4_merged_sni.txt | grep -F ".example.com" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".example.com" | sort -u > cloud.subdomains.txt
+#### whoxy
+[whoxy.com](https://www.whoxy.com/)
 
+    https://api.whoxy.com/?key=<your_api_key_here>&reverse=whois&keyword=<company_name_here>&mode=domains
+#### Ad/Analytics Tracker Code
+[https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py](https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
+You are going to need the cookie of your [https://pro.builtwith.com/](https://pro.builtwith.com/) account.
+
+    python3 getrelationship.py example.com <the-builwith-cookie>
+#### Github
+[https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)
+Your can get your github api key from ```https://github.com/settings/tokens```
+
+    github-subdomains -d tesla.com -t github_api_key_here -o outputfile.txt
+You can checkout other github enumerating tools from here [https://10degres.net/github-tools-collection/](https://10degres.net/github-tools-collection/)
+     
+    
     
     
 
