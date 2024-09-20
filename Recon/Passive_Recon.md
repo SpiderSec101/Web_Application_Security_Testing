@@ -34,7 +34,11 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [amass enum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-enum)
   * [puredns](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#puredns)
   * [dnsshuffle](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shuffledns)
-
+### 7. Permuted Scanning
+  * [dnsgen](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#dnsgen)
+### 8. Favicon
+  * [favfreak](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#favfreak)
+  * [Murmur Hash](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
 
 
 ---  
@@ -201,6 +205,29 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
 
     shiffledns -d company.com -w wrodlist.txt -r resolvers.txt
 
+#### dnsgen   
+Provide all of the subdomains and apex domains you enumerated to the dnsgen.
+
+    cat sub-domain-file.txt | dnsgen - | puredns resolve -r resolvers.txt 
+
+#### favfreak
+[https://github.com/devanshbatham/FavFreak](https://github.com/devanshbatham/FavFreak)
+
+    echo 'example.com' | python3 favfreak.py -o output
+
+#### Murmur Hash
+ * From karmav2 you will get some of the favicon files as favicon.ico, or you can download the favicon of the target website
+ * Using a python module ```mmh3``` to find the murmur hash
+
+       cat favicon.ico | base64 | python3 -c "import mmh3,sys; print(mmh3.hash(sys.stdin.buffer.read()))"
+ * Search for the hash value in the Shodan
+
+       http.favicon.hash:<hashvalue_here>
+ * All together
+
+         curl -s <path_to_the_favicon.ico_file> | base64 | python3 -c 'import mmh3, sys;print(mmh3.hash(sys.stdin.buffer.read()))' | xargs -I{} shodansearch http.favicon.hash:{} --fields hostnames | tr ";" "\n"
+
+#### 
     
 
 
