@@ -13,7 +13,12 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 ### 3. Apex Domains and Subdomains    
   * [amass intel](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-intel)
   * [shodan](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shodan)
-  * [shosubgo]()
+  * [shosubgo](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shosubgo)
+  * [karma_v2](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#karma_v2)
+  * [Cloud](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#Cloud)
+  * [whoxy](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#whoxy)
+  * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#adanalytics-tracker-code)
+  * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github)
 
 
 ---  
