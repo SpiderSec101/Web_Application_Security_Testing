@@ -50,7 +50,7 @@
     katana -u https://example.com
 #### LinkFinder [<Github-Link>](https://github.com/GerbenJavado/LinkFinder)
     pytohn3 linkfinder.py -i https:/example.com -d
-#### SubDomainizer [<Github_Link>](https://github.com/nsonaniya2010/SubDomainizer)
+#### SubDomainizer [<Github-Link>](https://github.com/nsonaniya2010/SubDomainizer)
     python3 SubDomainizer.py -u https://example.com
 #### httrack
     httrack
