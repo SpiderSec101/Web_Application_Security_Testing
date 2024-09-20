@@ -47,6 +47,10 @@ After gathering all the apex domains and subdomains use ```httprobe``` to identi
   * [built-with Extension](https://chromewebstore.google.com/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn?hl=en)
   * [whatruns Extension](https://chromewebstore.google.com/detail/whatruns/cmkdbmfndkfgebldhnkbfhlneefdaaip?hl=en)
   * [webanalyze](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#webanalyze)
+### 11. Others
+  * [dnsdumpster.com](https://dnsdumpster.com)
+  * [sitereport.netcraft.com](https://sitereport.netcraft.com/)
+  * [hackertarget.com/domain-profiler](https://hackertarget.com/domain-profiler/)
 
 
 ---  
