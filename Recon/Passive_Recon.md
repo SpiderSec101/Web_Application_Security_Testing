@@ -20,9 +20,15 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#adanalytics-tracker-code)
   * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github)
   * [SubreconGPT](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#subrecongpt)
-  * [crt.sh](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#crt.sh)
+  * [crt.sh](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#crtsh)
 ### 4. Dorks
   * [Github Dorks](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github-dorks)
+### 5. Subdomain Scraping
+  * [Config File](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#config-file)
+  * [amass enum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-enum)
+  * [subfinder](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#subfinder)
+  * [bbot](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#bbot)
+
 
 
 ---  
@@ -111,6 +117,67 @@ You can checkout other github enumerating tools from here [https://10degres.net/
 
         %.%.%.example.com
   * Search for subdomains with keywords like internal, api, auth, admin etc.
+
+#### Config File  
+Configuring the APIs for the tools increases their efficiancy by up to 50%
+  * Places to get the free API keys are [Projectdiscovery.io](https://chaos.projectdiscovery.io/#/) , Shodan, GitHub
+  * Setup the config file
+
+        mkdir -p ~/.config/amass
+        touch ~/.config/amass/config.ini
+  * Open the ```config.ini``` and edit as shown below
+
+        [datasources]
+        ; Add your API keys under the relevant sections
+        ; Example: 
+        
+        ; Chaos
+        virustotal = your_chaos_api_key
+        
+        ; Shodan
+        shodan = your_shodan_api_key
+        
+        ; Github
+        spyse = your_github_api_key
+        
+        ; Facebook
+        securitytrails = your_facebook_api_key
+        
+        ; PassiveTotal
+        censys = your_PassiveTotal_api_secret
+
+#### amass enum
+  * Amass requires API keys for different Data Resources, to view the list
+
+        amass enum -list | grep -v '\*'
+  * Enumerating Subdomains
+
+        amass enum -d example.com
+    
+#### subfinder
+    subfinder -d example.com -o output.txt
+
+#### bbot 
+[https://github.com/blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot)
+  * Setting Up
+
+        # for permanent
+
+        echo "export PATH=$PATH:~/.local/bin" >> ~/.zshrc
+        source ~/.zshrc
+        
+        # for temporary
+        
+        export PATH=$PATH:~/.local/bin
+        source ~/.zshrc
+  * Running bbot
+
+        bbot -m otx -t example.com
+
+####     
+
+    
+    
 
      
     
