@@ -20,6 +20,7 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [Ad/Analytics Tracker Code](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#adanalytics-tracker-code)
   * [Github](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github)
   * [SubreconGPT](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#subrecongpt)
+  * [crt.sh](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#crt.sh)
 ### 4. Dorks
   * [Github Dorks](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#github-dorks)
 
@@ -105,6 +106,11 @@ You can checkout other github enumerating tools from here [https://10degres.net/
 [https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
 
     bash Gdorklink.sh example.com 
+#### crt.sh
+  * To search for subdomains can use % as your subdomain level requirement
+
+        %.%.%.example.com
+  * Search for subdomains with keywords like internal, api, auth, admin etc.
 
      
     
