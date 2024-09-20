@@ -28,18 +28,23 @@ Nmap provides a script called tergets-asn which is used to enumerate teh ASN
 #### shodan
     shodan domain -D example.com -S
 Scanning a domain
-#### shosubgo
-    shosubgo -d example.com -s shodan_api_key_here
-   [Github Link](https://github.com/incogbyte/shosubgo)
-#### karma_v2
+#### shosubgo  
+   [Github Link](https://github.com/incogbyte/shosubgo)  
+   
+       shosubgo -d example.com -s shodan_api_key_here
+#### karma_v2  
+[https://github.com/Dheerajmadhukar/karma_v2](https://github.com/Dheerajmadhukar/karma_v2)  
   * Setting-up the api key in the same directory of karma_v2 bash file
-    ``` echo 'shodan_api_key' > .token```
+
+        echo 'shodan_api_key' > .token
   * Running the bash script
-    ``` bash karmav2 -d example.com -l -1 -deep```
+
+        bash karmav2 -d example.com -l -1 -deep
   * Some bash commands to extract desirable information
-    ``` jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq >> ../../../target_domains.txt ```
-    ``` awk -F '::' {(for i=0, i<=NF, i++) print $i} ```
-    [https://github.com/Dheerajmadhukar/karma_v2](https://github.com/Dheerajmadhukar/karma_v2)                       
+
+        jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq >> ../../../target_domains.txt
+        awk -F '::' {(for i=0, i<=NF, i++) print $i}
+    
     
 
     
