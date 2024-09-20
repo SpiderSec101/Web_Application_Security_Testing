@@ -48,13 +48,13 @@
     echo 'example.com' | hakrawler -subs -d 3
 #### katana
     katana -u https://example.com
-   [<Github-Link>](https://github.com/projectdiscovery/katana) 
+   [Github-Link](https://github.com/projectdiscovery/katana) 
 #### LinkFinder
     pytohn3 linkfinder.py -i https:/example.com -d
-   [<Github Link>](https://github.com/GerbenJavado/LinkFinder) 
+   [Github-Link](https://github.com/GerbenJavado/LinkFinder) 
 #### SubDomainizer
     python3 SubDomainizer.py -u https://example.com
-   [<Github Link>](https://github.com/nsonaniya2010/SubDomainizer) 
+   [Github-Link](https://github.com/nsonaniya2010/SubDomainizer) 
 #### httrack
     httrack
    Then it will ask for different options, follow the instructions. 
