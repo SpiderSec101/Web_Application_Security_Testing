@@ -22,7 +22,9 @@
   * [<ins>katana</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#katana)
   * [<ins>LinkFinder</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#LinkFinder)
   * [<ins>SubDomainizer</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#SubDomainizer)
-### 6. Web Clone
+### 6. Subdomain Bruteforcing
+  * [ffuf](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#ffuf)
+### 7. Web Clone
   * [<ins>httrack</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#httrack)
 ---  
 
@@ -66,6 +68,12 @@
 #### httrack
     httrack
    Then it will ask for different options, follow the instructions. 
+
+#### ffuf
+[https://github.com/ffuf/ffuf](https://github.com/ffuf/ffuf)
+
+    ffuf -u https://example.com -H 'Host: FUZZ.example.com' -w /usr/share/wordlists/...
+
     
 
          
