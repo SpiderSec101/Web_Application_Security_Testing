@@ -58,8 +58,14 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
     curl -s https://api.bgpview.io/search?query_term=<company_name> | jq -r | grep -i asn
     
 #### Nmap  
-    nmap -sV --script=target-asn -T3 -Pn example.com
-Nmap provides a script called tergets-asn which is used to enumerate teh ASN  
+  * Scripts for scanning the ASN
+
+        ls /usr/share/nmap/scripts | grep -i asn
+  * Then you can choose any one script as,
+
+          
+        nmap --script=asn-query.nse -T2 -Pn example.com
+Nmap provides a script called targets-asn.nse which also can be used to enumerate the ASN.  
 
 #### amass intel
     amass intel -asn 1234
