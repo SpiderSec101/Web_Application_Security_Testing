@@ -68,7 +68,19 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 Nmap provides a script called targets-asn.nse which also can be used to enumerate the ASN.  
 
 #### amass intel
-    amass intel -asn 1234
+  * You can use this command to extract the domains
+    
+        amass intel -asn 1234
+  * I have written a bash script to automate this process a little bit. Save the numbers like AS1234 or ASN1234 in a file named ASN and run this script in the same directory.
+
+        #!/bin/bash
+
+        for i in $(cat ASN)
+        do
+            x=$(echo "$i" | tr -d 'ASN')
+            output=$(amass intel -asn "$x")
+            echo "$output"
+        done
 
 #### shodan
     shodan domain -D example.com -S
