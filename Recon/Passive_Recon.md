@@ -101,10 +101,18 @@ Scanning a domain
         bash karmav2 -d example.com -l -1 -deep
   * Some bash commands to extract desirable information
 
-        jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq >> ../../../target_domains.txt
+        jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
 
     
-        awk -F '::' {(for i=0, i<=NF, i++) print $i}
+        awk -F '::' '{for (i=0, i<=NF, i++) print $i}' <file_name_here>
+
+        # For extracting only IPv4
+        awk -F '::' '{for (i=1; i<=NF; i++) if ($i ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) print $i}' <file_name_here>
+
+        # For extracting only domains and subdomains
+        awk -F '::' '{for (i=1; i<=NF; i++) if ($i ~ /^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/) print $i}' <file_name_here>
+
+
 
 #### Cloud
 [https://kaeferjaeger.gay/](https://kaeferjaeger.gay/)
