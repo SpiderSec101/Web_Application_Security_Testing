@@ -153,7 +153,12 @@ You can checkout other github enumerating tools from here [https://10degres.net/
   * First install the chaos-client from here [https://github.com/projectdiscovery/chaos-client](https://github.com/projectdiscovery/chaos-client)
   * Then download the python script from here [https://github.com/jhaddix/SubreconGPT](https://github.com/jhaddix/SubreconGPT)
 
-        chaos -d example.com | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
+        pip install openai==0.28
+
+        # Now get the chaos api key from https://chaos.projectdiscovery.io/
+        export PDCP_API_KEY="your_chaos_key_here"
+
+        chaos -d example.com --key your_chaos_key_here | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
 
 #### Github Dorks
 [https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh](https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
