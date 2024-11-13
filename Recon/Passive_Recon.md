@@ -69,6 +69,9 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 
 #### amass intel
   * You can use this command to extract the domains
+  * Every ASN has associated IP ranges, amass used to look that ranges
+  * Then it performs a reverse DNS lookup, check the domain and subdomain names pointing to an IP
+  * It also used to look through OSINT sources, Certificate Transparency Logs, DNS Databases, Registry Informations etc.
     
         amass intel -asn 1234
   * I have written a bash script to automate this process a little bit. Save the numbers like AS1234 or ASN1234 in a file named ASN and run this script in the same directory.
