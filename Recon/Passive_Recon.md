@@ -167,6 +167,10 @@ You can checkout other github enumerating tools from here [https://10degres.net/
 
     bash Gdorklink.sh example.com 
 #### crt.sh
+
+  * crt.sh used to find subdomians by scanning SSL/TLS certificates
+  * When an organisation sets a SSL / TLS certificate for their domain they may include other domains and subdomains under the same certificate
+  * SSL certificates have a field SAN (Subject Alternative Name) which holds additional domain and subdomain names that the certificate covers.
   * To search for subdomains can use % as your subdomain level requirement
 
         %.%.%.example.com
