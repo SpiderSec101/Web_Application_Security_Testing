@@ -144,6 +144,8 @@ You are going to need the cookie of your [https://pro.builtwith.com/](https://pr
 #### Github
 [https://github.com/gwen001/github-subdomains](https://github.com/gwen001/github-subdomains)    
 
+Here I am using a command line tool which uses a github api key and search the public github repositries for the subdomains of the target domain. It look through all of the hard coded data into the github repositries.
+
 Your can get your github api key from ```https://github.com/settings/tokens```
 
     github-subdomains -d example.com -t github_api_key_here -o outputfile.txt
