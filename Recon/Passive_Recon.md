@@ -214,6 +214,8 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
   * Enumerating Subdomains
 
         amass enum -d example.com
+    Here the ```enum``` stands for enumeration. It used to enumerate subdomains by using passive DNS queries, scraping web services and also used the scan certificates
+    
   * Subdomain Bruteforcing
 
         amass enum -brute -d example.com -w wordlists.txt -r resolvers.txt  
