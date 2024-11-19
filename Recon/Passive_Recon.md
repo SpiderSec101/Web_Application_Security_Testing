@@ -36,17 +36,14 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [shuffledns](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shuffledns)
 ### 7. Permuted Scanning
   * [dnsgen](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#dnsgen)
-### 8. Favicon
-  * [favfreak](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#favfreak)
-  * [Murmur Hash](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
-### 9. Live Subdomains
+### 8. Live Subdomains
   * [httprobe](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
-### 10. Backend Technologies
+### 9. Backend Technologies
   * [wappalyzer Extension](https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
   * [built-with Extension](https://chromewebstore.google.com/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn?hl=en)
   * [whatruns Extension](https://chromewebstore.google.com/detail/whatruns/cmkdbmfndkfgebldhnkbfhlneefdaaip?hl=en)
   * [webanalyze](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#webanalyze)
-### 11. Others
+### 10. Others
   * [dnsdumpster.com](https://dnsdumpster.com)
   * [sitereport.netcraft.com](https://sitereport.netcraft.com/)
   * [hackertarget.com](https://hackertarget.com/domain-profiler/)
@@ -263,30 +260,7 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
 Provide all of the subdomains and apex domains you enumerated to the dnsgen.
 
     cat sub-domain-file.txt | dnsgen - | puredns resolve -r resolvers.txt 
-
-#### favfreak
-[https://github.com/devanshbatham/FavFreak](https://github.com/devanshbatham/FavFreak)
-
-It is a python based tool that used to search for favicon.ico files and calculate murmur hash. Then it has a list of known hash values. If the calculated hash value match with any of them, it shows it as output. Then one can easily use shodan dorks to find domain related data.
-
-    echo 'example.com' | python3 favfreak.py -o output
-
-    http.favicon.hash:YOUR_HASH_VALUE
-
-#### Murmur Hash
- * From karmav2 you will get some of the favicon files as favicon.ico, or you can download the favicon of the target website
- * Using a python module ```mmh3``` to find the murmur hash
-
-       cat favicon.ico | base64 | python3 -c "import mmh3,sys; print(mmh3.hash(sys.stdin.buffer.read()))"
-   
- * Search for the hash value in the Shodan
-
-       http.favicon.hash:<hashvalue_here>
-   
- * All together
-
-         curl -s <path_to_the_favicon.ico_file> | base64 | python3 -c 'import mmh3, sys;print(mmh3.hash(sys.stdin.buffer.read()))' | xargs -I{} shodansearch http.favicon.hash:{} --fields hostnames | tr ";" "\n"
-
+    
 #### httprobe
     cat all_subdomains.txt | httprobe > live_domains.txt
 
