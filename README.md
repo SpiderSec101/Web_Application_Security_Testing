@@ -4,5 +4,5 @@ I have created this repository to provide a structured approach to my web applic
 
 ---
 
-###  * [Recon](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Recon)
-###  * [Application Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Application%20Analysis)
+* ### [Recon](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Recon)
+* ### [Application Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Application%20Analysis)
