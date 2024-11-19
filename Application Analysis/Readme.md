@@ -10,20 +10,7 @@ By analyzing an application's different aspects we can understand and find out t
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 #### favfreak
 [https://github.com/devanshbatham/FavFreak](https://github.com/devanshbatham/FavFreak)
@@ -33,6 +20,8 @@ It is a python based tool that used to search for favicon.ico files and calculat
     echo 'example.com' | python3 favfreak.py -o output
 
     http.favicon.hash:YOUR_HASH_VALUE
+
+After finding some of the domains you can check those domains and subdomains as your targets.
 
 #### Murmur Hash
  * From karmav2 you will get some of the favicon files as favicon.ico, or you can download the favicon of the target website
