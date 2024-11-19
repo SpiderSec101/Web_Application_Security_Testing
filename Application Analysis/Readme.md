@@ -5,8 +5,23 @@ By analyzing an application's different aspects we can understand and find out t
 ---
 
 ### 1. Favicon
-  * [favfreak](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#favfreak)
-  * [Murmur Hash](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#murmur-hash)
+  * [favfreak](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Application%20Analysis/Readme.md#favfreak)
+  * [Murmur Hash](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Application%20Analysis/Readme.md#murmur-hash)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
