@@ -33,7 +33,7 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
   * [resolvers.txt](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#resolverstxt)
   * [amass enum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#amass-enum)
   * [puredns](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#puredns)
-  * [dnsshuffle](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shuffledns)
+  * [shuffledns](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#shuffledns)
 ### 7. Permuted Scanning
   * [dnsgen](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Passive_Recon.md#dnsgen)
 ### 8. Favicon
@@ -236,6 +236,7 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
         
         export PATH=$PATH:~/.local/bin
         source ~/.zshrc
+    
   * Running bbot
 
         bbot -m otx -t example.com
@@ -256,7 +257,7 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
 #### shuffledns    
 [https://github.com/projectdiscovery/shuffledns](https://github.com/projectdiscovery/shuffledns)
 
-    shiffledns -d company.com -w wrodlist.txt -r resolvers.txt
+    shuffledns -d company.com -w wordlist.txt -r resolvers.txt -mode bruteforce
 
 #### dnsgen   
 Provide all of the subdomains and apex domains you enumerated to the dnsgen.
