@@ -178,7 +178,8 @@ You can checkout other github enumerating tools from here [https://10degres.net/
 
 #### Config File  
 Configuring the APIs for the tools increases their efficiancy by up to 50%
-  * Places to get the free API keys are [Projectdiscovery.io](https://chaos.projectdiscovery.io/#/) , Shodan, GitHub
+  * Places to get the free API keys are [Projectdiscovery.io](https://chaos.projectdiscovery.io/#/)(chaos) , Shodan, GitHub, X Api, FacebookCT, etc.
+  * Here is a blog => https://www.hahwul.com/2020/09/23/amass-go-deep-in-the-sea-with-free-apis/  . It helps to understand how one can work with amass using free and paid APIs.
   * Setup the config file
 
         mkdir -p ~/.config/amass
