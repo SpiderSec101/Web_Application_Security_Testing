@@ -206,12 +206,19 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
         censys = your_PassiveTotal_api_secret
 
 #### amass enum
-  * Amass requires API keys for different Data Resources, to view the list
+
+  * Amass has some of the by defaul available APIs, you can see it from
+
+        amass enum -list
+    
+  * To find amass unabled apis 
 
         amass enum -list | grep -v '\*'
+    
   * Enumerating Subdomains
 
         amass enum -d example.com
+    
     Here the ```enum``` stands for enumeration. It used to enumerate subdomains by using passive DNS queries, scraping web services and also used the scan certificates
     
   * Subdomain Bruteforcing
