@@ -214,8 +214,14 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
   * To find amass unabled apis 
 
         amass enum -list | grep -v '\*'
+
+  * You can specify the config.ini file with ```-config``` flag
+
+        amass enum -d example.com -config ~/Desktop/my_configfile/config.ini
     
-  * Enumerating Subdomains
+  * Or one can save the conig.ini file at the default config file location. With change in operating systems the location of the file varies.
+  * For Linux / Unix systems it is => $XDG_CONFIG_HOME/amass/config.ini or $HOME/.config/amass/config.ini
+  * Now you can use amass without apecifying the ```-config``` option
 
         amass enum -d example.com
     
