@@ -52,7 +52,8 @@ It is a unique identifier assigned to an Autonomous System (AS), which is a coll
 ---  
 ### Tools:
 #### BGP View API
-    curl -s https://api.bgpview.io/search?query_term=<company_name> | jq -r | grep -i asn
+    curl -s https://api.bgpview.io/search?query_term=<company_name> | jq -r | grep -i '"asn"' | cut -d : -f2 | tr -d ','
+
     
 #### Nmap  
   * Scripts for scanning the ASN
