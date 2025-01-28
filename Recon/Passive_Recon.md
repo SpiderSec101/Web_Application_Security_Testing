@@ -118,7 +118,7 @@ Scanning a domain
 
 #### Cloud
 [https://kaeferjaeger.gay/](https://kaeferjaeger.gay/)
-  * This site scan all wellknown cloud service providers every week and pull down IPs SSL Certificates
+  * This site scan all the data of wellknown cloud service providers every week and pull down IPs SSL Certificates
   * To download, scroll down and select the ```sni-ip-ranges```
   * Then you can see all the well known cloud service providers, select one of them and go to the ```ipv4_merged_sni.txt```
   * To download make a directory with the name of the cloud service provider and use wget
