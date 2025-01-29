@@ -1,6 +1,7 @@
 - ## [Injection Points](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/Entrypoint_Detection.md#injection-points-1)
 - ## [List of Parametes](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/Entrypoint_Detection.md#list-of-parameters)
 - ## Giving Inputs
+  
      * Error Based
      * True False Based 
      * Timing Attacks
