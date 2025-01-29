@@ -1,7 +1,7 @@
 * Injection Points
 * Inputs
-<ins></ins>
-### Injection Points
+
+### Injection Points  
 We should check for areas where ever we can give inputs. We should specially check for these areas ==>
 - Login Form
 - Url Search Parameters
