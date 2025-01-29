@@ -1,5 +1,5 @@
-* ## <ins>Injection Points</ins>
-* ## Inputs
+* ### _Injection Points_
+* ### Inputs
 
 ### Injection Points
 - Login Form
