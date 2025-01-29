@@ -1,11 +1,10 @@
 * ## Injection Points
-* ## Parametes
-* ## Giving Inputs
+* * ## Parametes
+* * ## Giving Inputs
      * Error Based
      * Tautology Based
      * Timing Attacks
      * Merging Characters
-
 ---
 
 ### Injection Points  
