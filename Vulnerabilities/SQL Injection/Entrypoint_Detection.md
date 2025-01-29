@@ -1,7 +1,6 @@
 * Injection Points
 * Inputs
-
-    
+<br>
 ### Injection Points  
 We should check for areas where ever we can give inputs. We should specially check for these areas ==>
 - Login Form
