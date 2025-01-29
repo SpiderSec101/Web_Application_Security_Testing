@@ -2,9 +2,9 @@
 - ### [List of Parametes](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/Entrypoint_Detection.md#list-of-parameters)
 - ### [Giving Inputs](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/Entrypoint_Detection.md#giving-inputs)
      * [Error Based](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/Entrypoint_Detection.md#error-based)
-     * True False Based 
-     * Timing Attacks
-     * Merging Characters
+     * [True False Based] (https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/Entrypoint_Detection.md#true-false-based)
+     * [Timing Attacks](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/Entrypoint_Detection.md#timing-attacks)
+  
 ---
 
 ### Injection Points  
