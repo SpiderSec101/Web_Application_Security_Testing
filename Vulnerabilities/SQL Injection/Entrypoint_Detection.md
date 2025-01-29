@@ -1,6 +1,6 @@
-* ## Injection Points
-* * ## Parametes
-* * ## Giving Inputs
+- ## Injection Points
+-  ## Parametes
+- ## Giving Inputs
      * Error Based
      * Tautology Based
      * Timing Attacks
