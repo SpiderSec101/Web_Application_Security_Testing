@@ -9,6 +9,7 @@ If we does not know any thing about the target database and tables, to know the 
 It is a database fingerprinting technique in which we apply different SQL payloads to get any valid responses, so that we can confirm which SQL payload is working and then the database type can be easily known through the tables
 
 - **MySQL-Specific Payloads**
+
 If these payload can trigger ant valid responses or errors the DBMS is likely My-SQL based.
   
       conv('a',16,2)=conv('a',16,2)
