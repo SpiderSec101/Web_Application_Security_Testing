@@ -1,7 +1,7 @@
 If we does not know any thing about the target database and tables, to know the database name and the version will be our first priority.
 
-- ### [SQL Payloads](https://github.com/SpiderSec101/Web_Application_Security_Testing/new/main/Vulnerabilities/SQL%20Injection#sql-payloads)
-- ### [Error Messages](https://github.com/SpiderSec101/Web_Application_Security_Testing/edit/main/Vulnerabilities/SQL%20Injection/DBMS_Identification.md#error-messages)
+- ### [SQL Payloads](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/DBMS_Identification.md#sql-payloads-1)
+- ### [Error Messages](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Vulnerabilities/SQL%20Injection/DBMS_Identification.md#error-messages)
 
 ---
 
