@@ -10,7 +10,7 @@ It is a database fingerprinting technique in which we apply different SQL payloa
 
 - **MySQL-Specific Payloads**
 
-If these payload can trigger ant valid responses or errors the DBMS is likely My-SQL based.
+If these payload can trigger any valid responses or SQL errors the DBMS is likely My-SQL based.
   
       conv('a',16,2)=conv('a',16,2)
       connection_id()=connection_id()
@@ -25,6 +25,7 @@ If these payload can trigger ant valid responses or errors the DBMS is likely My
       USER_ID(1)=USER_ID(1)
   
 - **Oracle Specific Payloads**
+  
       ROWNUM=ROWNUM
       RAWTOHEX('AB')=RAWTOHEX('AB')
       LNNVL(0=123)
