@@ -177,6 +177,13 @@ You can checkout other github enumerating tools from here [https://10degres.net/
 
         %.%.%.example.com
   * Search for subdomains with keywords like internal, api, auth, admin etc.
+  * You can extract information from terminal by using curl and the json ouput format
+
+        curl -s https://crt.sh/\?q=<company_domain_name>\&output=json | jq . | grep 'common_name' | tr -d ',":' | awk '{print $2}' | sort -u
+  * This will extract a list of subdomains and wildcards.
+  * Then one can use the host command to resolve the IP with the domains.
+
+        for i in $(cat file_name); do host $i | grep 'has address' | awk '{print $1,"==>", $4}'; done
 
 #### Config File  
 Configuring the APIs for the tools increases their efficiancy by up to 50%
