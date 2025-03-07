@@ -24,6 +24,7 @@
   * [<ins>SubDomainizer</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#SubDomainizer)
 ### 6. Subdomain Bruteforcing
   * [ffuf](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#ffuf)
+  * [dnsenum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#dnsenum)
 ### 7. Web Clone
   * [<ins>httrack</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#httrack)
 ---  
@@ -73,6 +74,11 @@
 [https://github.com/ffuf/ffuf](https://github.com/ffuf/ffuf)
 
     ffuf -u https://example.com -H 'Host: FUZZ.example.com' -w /usr/share/wordlists/...
+
+#### dnsenum
+
+    dnsenum --enum example.com -f /usr/sahre/wordlists/.. -r
+* -r is used for the recursive option. If it finds a subdomain like auth.example.com then it will try to find out the subdomain of this subdomain (for example d1.auth.example.com)
 
     
 
