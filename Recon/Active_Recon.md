@@ -45,7 +45,7 @@
     wafw00f -a example.com  
 #### gospider  
     gospider -s https://example.com -w -d 0
-   This tool used to crawl the webiste recursively. Here -w is used for the adding the subdomains inscope, -d is used for depth control. -d 0 is used for the infinite recurse and by default set to 1.
+   This tool used to crawl the webiste recursively. Here -w is used for output in Wayback Machine format, helping find historical URLs. -d is used for depth control. -d 0 is used for the infinite recurse and by default set to 1.
 #### hakrawler 
     echo 'example.com' | hakrawler -subs -d 3
 #### katana  
