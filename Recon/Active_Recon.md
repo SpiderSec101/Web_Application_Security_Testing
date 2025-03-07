@@ -15,16 +15,17 @@
   * [<ins>fierce</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#fierce)
 ### 4. Web Application Firewall
   * [<ins>wafw00f</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#wafw00f)
-### 5. Subdomains and Endpoints
+### 5. Webcrawlers
   * [<ins>gospider</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#gospider)
   * [<ins>hakrawler</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#hakrawler)
   * [<ins>katana</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#katana)
+### 6. Endpoints
   * [<ins>LinkFinder</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#LinkFinder)
   * [<ins>SubDomainizer</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#SubDomainizer)
-### 6. Subdomain Bruteforcing
+### 7. Subdomain Bruteforcing
   * [ffuf](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#ffuf)
   * [dnsenum](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#dnsenum)
-### 7. Web Clone
+### 8. Web Clone
   * [<ins>httrack</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#httrack)
 ---  
 
@@ -44,10 +45,13 @@
 #### wafw00f
     wafw00f -a example.com  
 #### gospider  
-    gospider -s https://example.com -w -d 0
-   This tool used to crawl the webiste recursively. Here -w is used for output in Wayback Machine format, helping find historical URLs. -d is used for depth control. -d 0 is used for the infinite recurse and by default set to 1.
+    gospider -q -s https://example.com -w -d 0
+   This tool used to crawl the webiste recursively. -w used to include subdomains crawled from 3rd party. Default is main domain. -d is used for depth control. -d 0 is used for the infinite recurse and by default set to 1. -q is ued for quite, only show the URLs.
 #### hakrawler 
+This tool is use to gather the URLs and Javascript file locations.
+
     echo 'example.com' | hakrawler -subs -d 3
+-subs is used to include the subdomains and -d used to specify the crawled depth. One can send the HTTP rquests from a proxy (BurpSuit) by using the option -proxy ```http://127.0.0.1:8080```
 #### katana  
 [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana) 
 
