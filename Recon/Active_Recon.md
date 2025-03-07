@@ -45,13 +45,16 @@
 #### wafw00f
     wafw00f -a example.com  
 #### gospider  
+[https://github.com/jaeles-project/gospider](https://github.com/jaeles-project/gospider)
+NOTE: Webcrawlers are advised to run after findout the valid domains and subdomains with httpx or httprobe
     gospider -q -s https://example.com -w -d 0
    This tool used to crawl the webiste recursively. -w used to include subdomains crawled from 3rd party. Default is main domain. -d is used for depth control. -d 0 is used for the infinite recurse and by default set to 1. -q is ued for quite, only show the URLs.
 #### hakrawler 
+[https://github.com/hakluke/hakrawler](https://github.com/hakluke/hakrawler)
 This tool is use to gather the URLs and Javascript file locations.
 
     echo 'example.com' | hakrawler -subs -d 3
--subs is used to include the subdomains and -d used to specify the crawled depth. One can send the HTTP rquests from a proxy (BurpSuit) by using the option -proxy ```http://127.0.0.1:8080```
+-subs is used to include the subdomains and -d used to specify the crawled depth. One can send the HTTP rquests from a proxy (BurpSuit) by using the option ```-proxy http://127.0.0.1:8080```
 #### katana  
 [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana) 
 
