@@ -12,7 +12,6 @@
   * [<ins>host</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#host)
 ### 3. DNS Enumeration
   * [<ins>dnsrecon</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#dnsrecon)
-  * [<ins>dnsenum</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#dnsenum)
   * [<ins>fierce</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#fierce)
 ### 4. Web Application Firewall
   * [<ins>wafw00f</ins>](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Recon/Active_Recon.md#wafw00f)
@@ -40,8 +39,6 @@
    It provides the IPs associated with the domain name  
 #### dnsrecon 
     dnsrecon -d example.com
-#### dnsenum
-    dnsenum example.com  
 #### fierce  
     fierce --domain example.com  
 #### wafw00f
