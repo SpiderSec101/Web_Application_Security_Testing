@@ -45,12 +45,15 @@
 #### wafw00f
     wafw00f -a example.com  
 #### gospider  
-[https://github.com/jaeles-project/gospider](https://github.com/jaeles-project/gospider)
+[https://github.com/jaeles-project/gospider](https://github.com/jaeles-project/gospider)  
+
 NOTE: Webcrawlers are advised to run after findout the valid domains and subdomains with httpx or httprobe
+
     gospider -q -s https://example.com -w -d 0
    This tool used to crawl the webiste recursively. -w used to include subdomains crawled from 3rd party. Default is main domain. -d is used for depth control. -d 0 is used for the infinite recurse and by default set to 1. -q is ued for quite, only show the URLs.
 #### hakrawler 
-[https://github.com/hakluke/hakrawler](https://github.com/hakluke/hakrawler)
+[https://github.com/hakluke/hakrawler](https://github.com/hakluke/hakrawler)  
+
 This tool is use to gather the URLs and Javascript file locations.
 
     echo 'example.com' | hakrawler -subs -d 3
