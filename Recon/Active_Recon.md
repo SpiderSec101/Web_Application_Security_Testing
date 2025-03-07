@@ -56,7 +56,7 @@ NOTE: Webcrawlers are advised to run after findout the valid domains and subdoma
 
 This tool is use to gather the URLs and Javascript file locations.
 
-    echo 'example.com' | hakrawler -subs -d 3
+    echo https://example.com | hakrawler -subs -d 3
 -subs is used to include the subdomains and -d used to specify the crawled depth. One can send the HTTP rquests from a proxy (BurpSuit) by using the option ```-proxy http://127.0.0.1:8080```
 #### katana  
 [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana) 
