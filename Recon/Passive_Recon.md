@@ -87,17 +87,6 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
     shodan domain -D example.com -S
     jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
 
-awk -F '::' '{for (i=0, i<=NF, i++) print $i}' <file_name_here>
-
-# For extracting only IPv4
-
-awk -F '::' '{for (i=1; i<=NF; i++) if ($i ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) print $i}' <file_name_here>
-
-# For extracting only domains and subdomains
-
-awk -F '::' '{for (i=1; i<=NF; i++) if ($i ~ /^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/) print $i}' <file_name_here>
-Scanning a domain
-
 #### shosubgo  
    [https://github.com/incogbyte/shosubgo](https://github.com/incogbyte/shosubgo)  
    
