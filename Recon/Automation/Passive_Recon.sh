@@ -30,7 +30,7 @@ echo '
 [7] Gdorkslink.sh (https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
 [8] bbot (https://github.com/blacklanternsecurity/bbot)
 [9] shuffledns (https://github.com/projectdiscovery/shuffledns)
-[10] puewdns (https://github.com/d3mondev/puredns)
+[10] puredns (https://github.com/d3mondev/puredns)
 [11] dnsgen 
 [12] httprobe
 ' | lolcat
