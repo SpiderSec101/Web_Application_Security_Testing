@@ -18,7 +18,6 @@ animation_1() {
 read -p "Enter the target company domain (EG: tesla.com) : " target_domain
 read -p "Enter the target company name (EG: Tesla) : " target_company
 
-
 mkdir "$target_company"
 cd "$target_company"
 echo '>> Generating the directory structure' | lolcat
@@ -26,7 +25,6 @@ echo "Creating a directory named 'Downloads_for_Recon'"
 mkdir Downloads_for_Recon
 echo "Creating a directory named 'Passive_Recon'"
 mkdir Passive_Recon
-
 
 # API Keys and Cookies
 
@@ -47,11 +45,10 @@ else
     echo Skipped.......
 fi    
 
-
 # config file setup
 
 echo 
-echo '>> Make sure you have added a config.ini file in a specific location' | lolcat
+read -p '>> Have you created the config.ini file for amass and bbot? (y/n)=> ' the_config_answer
 <<SKIP1
 mkdir ./.config
 mkdir ./.config/amass
@@ -70,10 +67,7 @@ spyse = "$github_api_key"
 EOF
 echo 'Done'
 SKIP1
-
 echo 'You can add more API keys as you want'
-
-
 
 # Python virtual environment setup
 
@@ -107,7 +101,6 @@ else
     echo 'Skipping'
 fi
 
-
 read -p 'Do you want me to install puredns (https://github.com/d3mondev/puredns)? (y/n)=> ' puredns_answer
 if [ "$puredns_answer" = 'y' ];then
         git clone https://github.com/blechschmidt/massdns.git
@@ -116,7 +109,6 @@ if [ "$puredns_answer" = 'y' ];then
         sudo make install
         echo 'Done'
 fi
-
 read -p 'Do you want me to install shuffledns (https://github.com/projectdiscovery/shuffledns)? (y/n)=> ' shuffledns_install_answer
 if [" $shuffledns_install_answer" = 'y' ];then
     go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
@@ -124,6 +116,7 @@ if [" $shuffledns_install_answer" = 'y' ];then
 fi
 
 #bbot
+
 read -p 'Do you want me to download bbot (https://github.com/blacklanternsecurity/bbot)? (y/n)=> ' bbot_answer
 if [ "$bbot_answer" = 'y' ]; then 
     pipx install bbot
@@ -133,7 +126,6 @@ if [ "$bbot_answer" = 'y' ]; then
 fi
 
 # resolvers.txt
-
 
 echo 
 echo 'resolvers.txt is a file that contains a list of DNS resolvers (i.e., DNS servers) that differen tools will use to perform DNS lookups'
@@ -146,12 +138,12 @@ else
     cp "$resolver_path" .
 fi
 cd ..
+
 # Wordlist
 
 echo 
 echo '>> Choose a wordlist for the subdomain bruteforce attack (suggested => https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056)' | lolcat
 read -p 'Enter the wordlist path: ' wordlist_path
-
 
 # ASN
 
@@ -168,29 +160,22 @@ sort -u Passive_Recon/asn_numbers > Passive_Recon/ASN
 rm Passive_Recon/asn_numbers
 echo "Output saved to file named 'ASN'"
 
-
 # amass intel
 
 echo ">> Extracting Apex Domains and Subdomains from the ASN" | lolcat
 echo 'Using amass intel'
-
 animation_1 &
 animation_1_pid=$!
-
 for i in $(cat Passive_Recon/ASN)
 do
     output=$(amass intel -asn "$i")
     echo "$output" >> Passive_Recon/asndomains.txt
-    break
 done
-
 kill "$animation_1_pid" 2>/dev/null
 printf "\rProcessing completed!\n"
-
 sort -u Passive_Recon/asndomains.txt > Passive_Recon/asn_domains.txt
 rm Passive_Recon/asndomains.txt
 echo "Output saved to asn_domains.txt"
-
 
 # shodan cli
 
@@ -219,9 +204,7 @@ pwd
 
 echo 
 echo '>> Enumerating data from cloud [https://kaeferjager.gay]' | lolcat
-
 platforms=("google" "amazon" "digitalocean" "oracle" "microsoft")
-
 for i in ${platforms[@]}; do
     echo "Downloading ipv4_merged_sni.txt for ${i}" | lolcat
     mkdir Downloads_for_Recon/cloud
@@ -230,13 +213,10 @@ for i in ${platforms[@]}; do
     wget https://kaeferjaeger.gay/sni-ip-ranges/${i}/ipv4_merged_sni.txt
     cd ../../
 done
-
 echo "Extracting data from the downloaded text files....."
 cd cloud
-
 animation_1 &
 animation_1_pid=$!
-
 touch cloud.subdomains.txt
 cat amazon/ipv4_merged_sni.txt digitalocean/ipv4_merged_sni.txt google/ipv4_merged_sni.txt microsoft/ipv4_merged_sni.txt oracle/ipv4_merged_sni.txt | grep -F ".${target_domain}" | awk -F'-- ' '{print $2}' | tr ' ' '\n' | tr -d '[]' | grep -F ".${target_domain}" | sort -u > cloud.subdomains.txt
 mv cloud.subdomains.txt ../../Passive_Recon/.
@@ -244,7 +224,6 @@ kill "$animation_1_pid" 2>/dev/null
 printf "\rProcess completed!"
 echo  'Output is saved to clouds.subdomains.txt'
 cd ../../
-
 pwd
 
 # Ad / Analytic Tracker Code
@@ -254,7 +233,6 @@ echo '>> Tracking Add and Analytic codes' | lolcat
 touch Passive_Recon/ad_analytic_tracker
 python3 Downloads_for_Recon/getrelationship.py ${target_domain} ${builtwith_cookie} > Passive_Recon/ad_analytic_tracker
 echo 'Done. Saved to ad_analytic_tracker'
-
 
 # SubreconGPT
 
@@ -267,7 +245,6 @@ touch Passive_Recon/subrecongpt_domains
 chaos -d ${target_domain} --key ${chaos_api_key} | python3 Downloads_for_Recon/subrecongpt.py --apikey ${openai_api_key} > Passive_Recon/subrecongpt_domains
 echo 'Done, output saved to subrecongpt_domains'
 
-
 sleep 2
 # whoxy.com
 
@@ -278,8 +255,6 @@ if [ "$whoxy_answer" = 'y' ] && [ -z "$whoxy_api_key" ]; then
 else 
     echo 'Error, skipping this part'
 fi
-
-
 
 # Github Dorks
 
@@ -309,9 +284,7 @@ touch Passive_Recon/github_subdomains.txt
 github-subdomains -d "$target_domain" -t github_api_key -o Passive_Recon/github_subdomains.txt
 echo 'Done:) and saved to github_subdomains.txt '
 
-
 # crt.sh
-
 
 echo 
 echo '>> Extracting informations from crt.sh' | lolcat
@@ -329,7 +302,6 @@ echo Done %.%.%.%.%."$target_domain"
 echo 'Resolving domains with IPs'
 for i in $(cat Passive_Recon/crt.subdomains.txt); do host $i | grep 'has address' | awk '{print $1,"==>", $4}'; done > Passive_Recon/crt.ipv4.txt
 echo Done
-
 
 # Running amass
 
@@ -353,10 +325,8 @@ touch Passive_Recon/subfinder_subdomains.txt
 subfinder -d "$target_domain" -o Passive_Recon/subfinder_subdomains.txt
 echo 'Done'
 
-
 # bbot
 
-<<SKIP5
 echo 
 echo 'Running the tool bbot (Make sure you have downloaded bbot).......' | lolcat
 touch Passive_Recon/bbot_subdomains.txt
@@ -364,7 +334,6 @@ bbot -m otx -t "$target_domain" > ./Passive_Recon/bbot_subdomains
 cat ./Passive_Recon/bbot_subdomains | awk '{print $2}' > ./Passive_Recon/bbot_subdomains.txt
 rm ./Passive_Recon/bbot_subdomains
 echo 'Done, saved to bbot_subdomains.txt'
-SKIP5
 
 # puredns
 
@@ -374,7 +343,6 @@ touch Passive_Recon/puredns_subdomains.txt
 puredns bruteforce "$wordlist_path" "$target_domain" -r Downloads_for_Recon/resolvers.txt -w ./Passive_Recon/puredns_subdomains.txt
 echo 'Done'
 
-
 # shuffledns
 
 echo
@@ -383,11 +351,9 @@ touch Passive_Recon/shuffledns_subdomains.txt
 shuffledns -d "$target_domain" -w "$wordlist_path" -r Downloads_for_Recon/resolvers.txt -mode bruteforce > ./Passive_Recon/shuffledns_subdomains.txt
 echo 'Done'
 
-
 # dnsgen
 
 echo 
 echo 'Running the tool dnsgen' | lolcat
 cd ./Passive_Recon
 cat * | dnsgen - | puredns resolve -r ../Downloads_for_Recon/resolvers.txt > ./dnsgen_subdomains.txt
-
