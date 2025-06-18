@@ -261,6 +261,7 @@ Configuring the APIs for the tools increases their efficiancy by up to 50%
   * Running bbot
 
         bbot -m otx -t example.com
+This command is used to run a BBOT scan with the OTX module enabled against the target example.com. The OTX module is designed to query the Open Threat Exchange (OTX) for threat intelligence data related to the target
 
 #### resolvers.txt
    * resolvers.txt is a file that contains a list of DNS resolvers (i.e., DNS servers) that differen tools will use to perform DNS lookups. Each line in the file represents the IP address of a DNS resolver.  
