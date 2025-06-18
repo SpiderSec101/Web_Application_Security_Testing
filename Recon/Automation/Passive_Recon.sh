@@ -4,7 +4,6 @@
 
 echo 
 echo "Welcome" | figlet -xpt -f pagga | lolcat
-sleep 1
 echo 
 echo '            )
            (
@@ -19,9 +18,9 @@ echo '            )
   (\ |)   '---'   (| /)
    ` (|           |) `
      \)           (/' | figlet -xtp -f term | lolcat
-sleep 2
+sleep 1
 echo 
-echo '
+echo '>> Here is a list of tools we are going to use.
 [1] amass
 [2] shosubgo (https://github.com/incogbyte/shosubgo)
 [3] github-subdomains
