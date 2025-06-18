@@ -4,6 +4,7 @@
 
 echo 
 echo "Welcome" | figlet -xpt -f pagga | lolcat
+sleep 1
 echo 
 echo '            )
            (
@@ -18,7 +19,7 @@ echo '            )
   (\ |)   '---'   (| /)
    ` (|           |) `
      \)           (/' | figlet -xtp -f term | lolcat
-
+sleep 2
 echo 
 echo '
 [1] amass
