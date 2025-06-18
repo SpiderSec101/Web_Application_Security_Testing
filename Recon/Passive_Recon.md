@@ -288,6 +288,7 @@ Provide all of the subdomains and apex domains you enumerated to the dnsgen.
     
 #### httprobe
     cat all_subdomains.txt | httprobe > live_domains.txt
+This tool helps to filter out the live domains.
 
 #### webanalyze
 [https://github.com/rverton/webanalyze](https://github.com/rverton/webanalyze)
