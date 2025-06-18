@@ -86,6 +86,7 @@ Nmap provides a script called targets-asn.nse which also can be used to enumerat
 #### shodan
     shodan domain -D example.com -S
     jq -r '.domains, .hostnames' <file_name_here> | tr -d ',[]"' | sort | uniq 
+  -S is used to specify the search query or filter the scan 
 
 #### shosubgo  
    [https://github.com/incogbyte/shosubgo](https://github.com/incogbyte/shosubgo)  
