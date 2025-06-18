@@ -1,6 +1,42 @@
 #!/bin/bash
-#toilet -f future --metal "Hello"
-#toilet -f future --gay "Hello"
+# This is an automated framework for passive recon processes written by Adil Hossain Sana
+# There can be issues with the versions of tools used by this script, please let me know about the issue, I will try to fix it
+
+echo 
+echo "Welcome" | figlet -xpt -f pagga | lolcat
+echo 
+echo '            )
+           (
+     /\  .-"""-.  /\
+    //\/  ,,,  \//\\
+    |/\| ,;;;;;, |/\|
+    //\\\;-"""-;///\\
+   //  \/   .   \/  \\
+  (| ,-_| |\_| |_,- |)
+    //`__\.-.-./__`\\
+   // /.-(() ())-.\ \\
+  (\ |)   '---'   (| /)
+   ` (|           |) `
+     \)           (/' | figlet -xtp -f term | lolcat
+
+echo 
+echo '
+[1] amass
+[2] shosubgo (https://github.com/incogbyte/shosubgo)
+[3] github-subdomains
+[4] SubreconGPT (https://github.com/jhaddix/SubreconGPT)
+[5] getrelationship.py (https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py)
+[6] chaos (https://github.com/projectdiscovery/chaos-client)
+[7] Gdorkslink.sh (https://github.com/RobinRana/githubRecon/blob/main/Gdorklinks.sh)
+[8] bbot (https://github.com/blacklanternsecurity/bbot)
+[9] shuffledns (https://github.com/projectdiscovery/shuffledns)
+[10] puewdns (https://github.com/d3mondev/puredns)
+[11] dnsgen 
+[12] httprobe
+' | lolcat
+read -p 'Before running this project make sure to download the tool and their dependencies as well (press Enter)'
+echo 
+read -p 'Are you ready to move further (It can take 2 to 3 hours)? (if ready Press Enter) =>'
 
 
 animation_1() {
