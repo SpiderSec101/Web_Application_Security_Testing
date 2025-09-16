@@ -5,7 +5,7 @@ Here I made a cheat sheet of different vulnerabilities. I followed different res
 ---
 
 ## Vulnerabilities
-* [SQL-Injection]()
+* [SQL-Injection](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Cheat_Sheet/SQL%20Injection)
 
 
 
