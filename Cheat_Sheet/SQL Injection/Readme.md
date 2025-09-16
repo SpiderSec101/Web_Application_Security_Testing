@@ -1,12 +1,12 @@
 # SQL Injection
 
-### Types of SQL Injection
+## Types of SQL Injection
 
 * In Band SQL Injection
 * Blind SQL Injection
 * OutOfBand Injection
 
-### SQL Injection Points
+## SQL Injection Points
 
 - **`Login Form`**
 - **`Url Search Parameters`**
@@ -16,7 +16,7 @@
 - **`Form Input Sections`**
 - **`File Upload Sections`**
 
-### Detecting SQL Injection
+## Detecting SQL Injection
 
 *  Error Based
 
@@ -72,7 +72,7 @@
         1' AND [RANDNUM]=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB([SLEEPTIME]00000000/2))))
         1' AND 123=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
 
-### Exploitation
+## Exploitation
 
 #### In-Band SQL Injection
 
