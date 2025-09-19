@@ -4,6 +4,7 @@
 - [Injection Points](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#sql-injection-points)
 - [Detection](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#detecting-sql-injection)
 - [Exploitation](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#exploitation)
+- [WAF Bypasses](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#waf-bypasses)
 ---
 ### Types of SQL Injection
 
