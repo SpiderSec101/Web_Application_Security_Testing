@@ -1,12 +1,17 @@
 # SQL Injection
 
-## Types of SQL Injection
+- [Types](https://github.com/SpiderSec101/Web_Application_Security_Testing/edit/main/Cheat_Sheet/SQL%20Injection/Readme.md#types-of-sql-injection)
+- [Injection Points](https://github.com/SpiderSec101/Web_Application_Security_Testing/edit/main/Cheat_Sheet/SQL%20Injection/Readme.md#sql-injection-points)
+- [Detection](https://github.com/SpiderSec101/Web_Application_Security_Testing/edit/main/Cheat_Sheet/SQL%20Injection/Readme.md#detecting-sql-injection)
+- [Exploitation](https://github.com/SpiderSec101/Web_Application_Security_Testing/edit/main/Cheat_Sheet/SQL%20Injection/Readme.md#exploitation)
+---
+### Types of SQL Injection
 
 * In Band SQL Injection
 * Blind SQL Injection
 * OutOfBand Injection
 
-## SQL Injection Points
+### SQL Injection Points
 
 - **`Login Form`**
 - **`Url Search Parameters`**
