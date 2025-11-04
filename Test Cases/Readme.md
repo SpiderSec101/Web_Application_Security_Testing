@@ -1,9 +1,9 @@
 # Test Cases
 
 - [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-apexdomains-ipv4-ipv6)
+- [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
 - [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
 - [Github Enumeration](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#github-enumeration)
-- [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
 - [Directory Bruteforcing](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#bruteforcing-directories--parameters)
 - [URls and Endpoints](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#urls--endpoints)
 - [Open Ports](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#open-ports)
@@ -58,23 +58,6 @@
   - httpx
   - Aquatone
   - html.sh (custom)
-## Tech Profiling
-- [ ] Wappalyzer
-- [ ] Builtwith
-- [ ] Whatruns
-- [ ] Webanalyzer
-- [ ] WAF
-    - wafw00f
-- [ ] Cloning
-  - httrack
-## Github Enumeration
-  - git-history
-  - github-dorks
-  - github-endpoints
-  - github-secrets
-  - github-subdomains
-  - github-contributors
-  - github-employess
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
@@ -84,6 +67,23 @@
 - [ ] fierce
 - [ ] host
 - [ ] whois
+## Github Enumeration
+  - git-history
+  - github-dorks
+  - github-endpoints
+  - github-secrets
+  - github-subdomains
+  - github-contributors
+  - github-employess
+## Tech Profiling
+- [ ] Wappalyzer
+- [ ] Builtwith
+- [ ] Whatruns
+- [ ] Webanalyzer
+- [ ] WAF
+    - wafw00f
+- [ ] Cloning
+    - httrack
 ## Bruteforcing (Directories / parameters)
 - [ ] dirsearch
 - [ ] ffuf
