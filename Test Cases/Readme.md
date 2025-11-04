@@ -11,6 +11,8 @@
 - [Manual Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#manual-analysis)
 - [Questions](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#questions)
 - [Wordlists](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#wordlists)
+---
+- [SQL Injection](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#sql-injection)
 
 
 
@@ -148,3 +150,16 @@
 - [ ] Payloadallthethings
 - [ ] Assetnotes
 - [ ] Custom (cewl)
+---
+## SQL Injection
+- [] In-Band SQL Injection
+  - Error Based
+  - Union Based
+  - Stacked Queries
+- [] Blind SQL Inection
+  - Boolean Based
+  - Time Based
+- [] Out of Band SQL Injection
+- [] Stacked Qeries
+- [] Second Order SQL Injection
+- [] Double Queries
