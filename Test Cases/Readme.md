@@ -1,0 +1,135 @@
+# Test Cases
+
+- [Asset Discovery]()
+- [Tech Profiling]()
+- []()
+- []()
+- []()
+- []()
+
+
+
+
+## Asset Discovery (Subdomains, Apexdomains, IPv4, IPv6)
+- [ ] Acquitisions
+  - crunchbase.com
+- [ ] ASN
+  - bgp.he.net
+  - nmap
+- [ ] Extracting Domains from ASN
+  - amass intel
+- [ ] Certificate Transparency
+  - crt.sh
+- [ ] Shodan
+  - Shodan CLI
+  - Shosubgo
+  - Karma_v2
+- [ ] Favicon Analysis
+  - favfreak.py
+- [ ] Cloud Based Recon
+  - kaeferjaeger.gay
+- [ ] github-subdomains
+- [ ] Ad/Analytics Tracker Codes
+  - builtwith
+- [ ] Amass Scanning
+- [ ] BBOT Scanning
+- [ ] Subfinder
+- [ ] Passive Subdomain Bruteforcing
+  - Puredns
+  - Amass
+  - Shuffledns
+- [ ] Active Subdomain Bruteforcing
+  - Dnsenum
+  - Sublist3r
+- [ ] Permutations
+  - dnsgen
+- [ ] Live Hosts
+  - httprobe
+  - httpx
+- [ ] Screenshots
+  - Eyewitness
+  - gowitness
+  - httpx
+  - Aquatone
+  - html.sh (custom)
+## Tech Profiling
+- [ ] Wappalyzer
+- [ ] Builtwith
+- [ ] Whatruns
+- [ ] Webanalyzer
+- [ ] WAF
+    - wafw00f
+- [ ] Cloning
+  - httrack
+## Github Enumeration
+  - git-history
+  - github-dorks
+  - github-endpoints
+  - github-secrets
+  - github-subdomains
+  - github-contributors
+  - github-employess
+## DNS Records
+- [ ] Amass Scanning
+- [ ] BBOT Scanning
+- [ ] dig
+- [ ] dnsrecon
+- [ ] dnsenum
+- [ ] fierce
+- [ ] host
+- [ ] whois
+## Bruteforcing (Directories / parameters)
+- [ ] dirsearch
+- [ ] ffuf
+- [ ] feroxbuster
+- [ ] wfuzz
+## URLs / Endpoints
+- [ ] JS Analysis (Linkfinder / SubDomainizer / Burp-GAP / JSMiner / metasec.js)
+- [ ] Crawlers (katana / go-spider / hakrawler)
+- [ ] Waymore
+- [ ] Known Paths (Demo / LocalInstall / Dockerhub)
+- [ ] APK Leaks
+## Open Ports
+- [ ] naabu
+- [ ] nmap
+- [ ] masscan
+- [ ] dnmasscan
+## Automated Analysis
+- [ ] Nuclei
+- [ ] Retire.js
+- [ ] Jaeles
+- [ ] Active Scan Burpsuite
+## Manual Analysis
+- [ ] CVEs
+- [ ] Passive Burp Scan
+- [ ] Manual Crawling (Sitemap)
+- [ ] Analyze Target
+  - Dynamic URLs
+  - Static URLs
+  - Parameters
+- [ ] Manual Fuzzing
+  - Repeater
+  - Intruder
+  - Wordlists
+## Questions
+- [ ] How does the app pass data
+     - Body (x-www-urlencoded / multipart-formdata / json)
+     - URL (Parameters / RESTful format)
+- [ ] Where does the app talk about users
+     - Where (Tokens / Cookies / API Calls)
+     - How (UID / email / username)
+- [ ] Multitenancy and User levels
+     - Multitenancy (customer / normal user / employee)
+     - User Levels (user / admin)
+- [ ] A unique Threat Model (CIA)
+- [ ] Past security researches and discovered vulns, CVEs
+- [ ] How the app stores data
+     - Database
+     - S3 Buckets
+     - Image Uploads / Comments / Profile details
+- [ ] How the framework handles or protect itself from different vulns
+## Wordlists
+- [ ] Seclists
+- [ ] Payloadallthethings
+- [ ] Assetnotes
+- [ ] Custom (cewl)
