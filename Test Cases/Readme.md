@@ -1,12 +1,16 @@
 # Test Cases
 
-- [Asset Discovery]()
-- [Tech Profiling]()
-- []()
-- []()
-- []()
-- []()
-
+- [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-apexdomains-ipv4-ipv6)
+- [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
+- [Github Enumeration](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#github-enumeration)
+- [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
+- [Directory Bruteforcing](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#bruteforcing-directories--parameters)
+- [URls and Endpoints](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#urls--endpoints)
+- [Open Ports](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#open-ports)
+- [Automated Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#automated-analysis)
+- [Manual Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#manual-analysis)
+- [Questions](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#questions)
+- [Wordlists](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#wordlists)
 
 
 
@@ -84,10 +88,21 @@
 - [ ] feroxbuster
 - [ ] wfuzz
 ## URLs / Endpoints
-- [ ] JS Analysis (Linkfinder / SubDomainizer / Burp-GAP / JSMiner / metasec.js)
-- [ ] Crawlers (katana / go-spider / hakrawler)
+- [ ] JS Analysis
+  - Linkfinder
+  - SubDomainizer
+  - Burp-GAP
+  - JSMiner
+  - metasec.js
+- [ ] Crawlers
+  - katana
+  - go-spider
+  - hakrawler
 - [ ] Waymore
-- [ ] Known Paths (Demo / LocalInstall / Dockerhub)
+- [ ] Known Paths
+  - Demo
+  - LocalInstall
+  - Dockerhub
 - [ ] APK Leaks
 ## Open Ports
 - [ ] naabu
