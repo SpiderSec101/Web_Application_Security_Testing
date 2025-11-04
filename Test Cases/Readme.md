@@ -152,14 +152,14 @@
 - [ ] Custom (cewl)
 ---
 ## SQL Injection
-- [] In-Band SQL Injection
+- [ ] In-Band SQL Injection
   - Error Based
   - Union Based
   - Stacked Queries
-- [] Blind SQL Inection
+- [ ] Blind SQL Inection
   - Boolean Based
   - Time Based
-- [] Out of Band SQL Injection
-- [] Stacked Qeries
-- [] Second Order SQL Injection
-- [] Double Queries
+- [ ] Out of Band SQL Injection
+- [ ] Stacked Qeries
+- [ ] Second Order SQL Injection
+- [ ] Double Queries
