@@ -2,8 +2,8 @@
 
 - [Asset Discovery](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#asset-discovery-subdomains-apexdomains-ipv4-ipv6)
 - [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
-- [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
 - [Github Enumeration](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#github-enumeration)
+- [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
 - [Directory Bruteforcing](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#bruteforcing-directories--parameters)
 - [URls and Endpoints](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#urls--endpoints)
 - [Open Ports](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#open-ports)
