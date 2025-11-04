@@ -150,6 +150,14 @@
 - [ ] Payloadallthethings
 - [ ] Assetnotes
 - [ ] Custom (cewl)
+## Modules and Sub-Modules
+- [ ] Authentication
+- [ ] Multifactor Authentication
+- [ ] Authorization
+- [ ] User Input Fields
+- [ ] Storing User Data
+- [ ] Retrieving Specific Data
+- [ ] File Upload Sections
 ---
 ## SQL Injection
 - [ ] In-Band SQL Injection
