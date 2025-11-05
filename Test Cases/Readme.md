@@ -192,6 +192,7 @@
   - [ ] Script
 - [ ] Filter Bypasses
 - [ ] CSP Bypasses
+- [ ] Iframe Sandbox
 - [ ] XSS through File Uploads
   - SVG
   - JPG
