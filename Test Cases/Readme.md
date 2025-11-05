@@ -11,8 +11,8 @@
 - [Manual Analysis](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#manual-analysis)
 - [Questions](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#questions)
 - [Wordlists](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#wordlists)
----
 - [SQL Injection](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#sql-injection)
+- [XSS](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#xss)
 
 
 
@@ -195,6 +195,7 @@
   - Markdown
   - XML
   - JS
+- [ ] Different Payloads
 - [ ] Dangling Markup Injection 
 
 
