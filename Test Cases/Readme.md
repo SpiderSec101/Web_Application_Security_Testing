@@ -115,7 +115,10 @@
 - [ ] Nuclei
 - [ ] Retire.js
 - [ ] Jaeles
-- [ ] Active Scan Burpsuite
+- [ ] Active Burpsuite Scan
+  - Scan a Target
+  - Scan a Request
+  - Scan an Input Parameter
 ## Manual Analysis
 - [ ] CVEs
 - [ ] Passive Burp Scan
