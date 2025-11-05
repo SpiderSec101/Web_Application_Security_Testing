@@ -186,10 +186,11 @@
 - [ ] Allowed Tags
 - [ ] Allowed Eventhandlers
 - [ ] Context
-  - [ ] HTML
-  - [ ] URL
-  - [ ] Attribute
-  - [ ] Script
+  - HTML
+  - URL
+  - Attribute
+  - Script
+- [ ] Check Fragments `location.hash`
 - [ ] Filter Bypasses
 - [ ] CSP Bypasses
 - [ ] Iframe Sandbox
@@ -203,8 +204,12 @@
   - Out-Of-Band Payload
   - Environment Setup 
 - [ ] Different Payloads
-- [ ] Dangling Markup Injection 
-
+- [ ] Exploitation
+  - Cookie Stealing
+  - Autofillup Password
+  - Stored XSS to CSRF
+  - CORS Bypass
+  - Dangling Markup Injection
 
 
 
