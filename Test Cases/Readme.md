@@ -171,13 +171,16 @@
 - [ ] Stacked Qeries
 - [ ] Second Order SQL Injection
 - [ ] Double Queries
+- [ ] Tools
+  - SQLMap
+  - Ghauri
 ## XSS 
 - [ ] Types
   - Reflected
   - Stored
   - DOM Based
   - Self XSS
-  - Blind XSS 
+  - Blind XSS
 - [ ] Try HTML Injection
 - [ ] Blocked Characters
 - [ ] Allowed Tags
@@ -195,6 +198,9 @@
   - Markdown
   - XML
   - JS
+- [ ] Blind XSS
+  - Out-Of-Band Payload
+  - Environment Setup 
 - [ ] Different Payloads
 - [ ] Dangling Markup Injection 
 
