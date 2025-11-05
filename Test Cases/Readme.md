@@ -171,3 +171,49 @@
 - [ ] Stacked Qeries
 - [ ] Second Order SQL Injection
 - [ ] Double Queries
+## XSS 
+- [ ] Types
+  - Reflected
+  - Stored
+  - DOM Based
+  - Self XSS
+  - Blind XSS 
+- [ ] Try HTML Injection
+- [ ] Blocked Characters
+- [ ] Allowed Tags
+- [ ] Allowed Eventhandlers
+- [ ] Context
+  - [ ] HTML
+  - [ ] URL
+  - [ ] Attribute
+  - [ ] Script
+- [ ] Filter Bypasses
+- [ ] CSP Bypasses
+- [ ] XSS through File Uploads
+  - SVG
+  - JPG
+  - Markdown
+  - XML
+  - JS
+- [ ] Dangling Markup Injection 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
