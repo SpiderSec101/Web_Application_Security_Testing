@@ -213,6 +213,10 @@
   - Stored XSS to CSRF
   - CORS Bypass
   - Dangling Markup Injection
+- [ ] HttpOnly
+  - localstorage
+  - phpinfo
+  - cookie with long path
 
 
 
