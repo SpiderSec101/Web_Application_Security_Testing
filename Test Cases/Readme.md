@@ -223,7 +223,27 @@
   - cookie with long path
 
 
-
+## Authentication
+- [ ] Weak Credentials
+- [ ] By-default Credentials
+- [ ] Ratelimiting
+- [ ] Account Locking
+- [ ] Captcha
+- [ ] Hardcoded Credentials
+- [ ] Forgot Password or Reset Password
+- [ ] User Name Enumeration
+- [ ] Session ID Prediction
+- [ ] JWT Manipulation
+- [ ] SQL Injection
+- [ ] Stored Password Hash
+- [ ] Strong Password Policy
+- [ ] OAuth
+- [ ] SSO
+- [ ] MFA
+  - OTP Bruteforcing
+  - Guessing OTP
+  - OTP Reuse 
+- [ ] 
 
 
 
