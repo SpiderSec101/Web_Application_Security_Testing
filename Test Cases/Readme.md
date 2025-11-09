@@ -172,6 +172,9 @@
 - [ ] Ratelimiting
 - [ ] Account Locking
 - [ ] Captcha
+  - Token Reuse
+  - Bypass via different HTTP Methods
+  - Captcha encoded into HTML
 - [ ] Hardcoded Credentials
 - [ ] Forgot Password or Reset Password
 - [ ] User Name Enumeration
@@ -187,6 +190,8 @@
   - OTP Bruteforcing
   - Guessing OTP
   - OTP Reuse
+- [ ] Register Using Content Discovery
+- [ ] Register Using API
 ## SQL Injection
 - [ ] In-Band SQL Injection
   - Error Based
