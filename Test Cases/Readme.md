@@ -154,13 +154,17 @@
 - [ ] Assetnotes
 - [ ] Custom (cewl)
 ## Modules and Sub-Modules
+- [ ] Find Directories and Sub-Directories
 - [ ] Authentication
-- [ ] Multifactor Authentication
+  - Token Basis
+  - Session Basis
 - [ ] Authorization
 - [ ] User Input Fields
-- [ ] Storing User Data
-- [ ] Retrieving Specific Data
-- [ ] File Upload Sections
+- [ ] File Uploads
+- [ ] Debugging Page / Console
+- [ ] HTTP Headers
+- [ ] HTTP Methods
+- [ ] Backup Files / Source Code
 ---
 ## SQL Injection
 - [ ] In-Band SQL Injection
