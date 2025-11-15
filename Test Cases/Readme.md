@@ -4,6 +4,7 @@
 - [DNS Records](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#dns-records)
 - [Github Enumeration](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#github-enumeration)
 - [Tech Profiling](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#tect-profiling)
+- [Meta Files](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#meta-files)
 - [Directory Bruteforcing](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#bruteforcing-directories--parameters)
 - [URls and Endpoints](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#urls--endpoints)
 - [Open Ports](https://github.com/SpiderSec101/Web_Application_Security_Testing/tree/main/Test%20Cases#open-ports)
@@ -86,6 +87,11 @@
     - wafw00f
 - [ ] Cloning
     - httrack
+## Meta Files
+- [ ] robots.txt
+- [ ] sitemap.xml
+- [ ] humans.txt
+- [ ] security.txt
 ## Bruteforcing (Directories / parameters)
 - [ ] dirsearch
 - [ ] ffuf
