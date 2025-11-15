@@ -164,6 +164,7 @@
 - [ ] User Input Fields
 - [ ] File Uploads
 - [ ] Debugging Page / Console
+- [ ] APIs
 - [ ] HTTP Headers
 - [ ] HTTP Methods
 - [ ] Backup Files / Source Code
