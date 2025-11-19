@@ -127,6 +127,10 @@
   - Scan a Target
   - Scan a Request
   - Scan an Input Parameter
+- [ ] Using AI
+  - [ ] strix (https://github.com/usestrix/strix)
+  - [ ] hexstrike
+  - [ ] AI Auditor 
 ## Manual Analysis
 - [ ] CVEs
 - [ ] Passive Burp Scan
