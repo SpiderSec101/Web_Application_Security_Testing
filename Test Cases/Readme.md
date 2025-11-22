@@ -195,6 +195,7 @@
 - [ ] Session Fixation
 - [ ] JWT Manipulation
 - [ ] SQL Injection
+- [ ] No SQL Injection
 - [ ] Stored Password Hash
 - [ ] Strong Password Policy
 - [ ] OAuth
