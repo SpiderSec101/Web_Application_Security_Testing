@@ -210,11 +210,11 @@
   - Error Based
   - Union Based
   - Stacked Queries
+  - Concatenation
 - [ ] Blind SQL Inection
   - Boolean Based
   - Time Based
 - [ ] Out of Band SQL Injection
-- [ ] Stacked Qeries
 - [ ] Second Order SQL Injection
 - [ ] Double Queries
 - [ ] Tools
