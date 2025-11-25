@@ -173,6 +173,7 @@
 - [ ] Authorization
 - [ ] User Input Fields
 - [ ] File Uploads
+- [ ] Chat-Bots
 - [ ] Debugging Page / Console
 - [ ] APIs
 - [ ] HTTP Headers
