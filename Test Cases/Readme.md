@@ -109,6 +109,7 @@
   - go-spider
   - hakrawler
 - [ ] Waymore
+- [ ] xnLinkFinder
 - [ ] Known Paths
   - Demo
   - LocalInstall
