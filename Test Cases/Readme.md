@@ -92,6 +92,8 @@
 - [ ] sitemap.xml
 - [ ] humans.txt
 - [ ] security.txt
+- [ ] .env
+- [ ] .git
 ## Bruteforcing (Directories / parameters)
 - [ ] dirsearch
 - [ ] ffuf
