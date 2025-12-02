@@ -33,8 +33,6 @@
   - Shodan CLI
   - Shosubgo
   - Karma_v2
-- [ ] Favicon Analysis
-  - favfreak.py
 - [ ] Cloud Based Recon
   - kaeferjaeger.gay
 - [ ] github-subdomains
@@ -61,6 +59,8 @@
   - httpx
   - Aquatone
   - html.sh (custom)
+- [ ] Favicon Analysis
+  - favfreak.py
 ## DNS Records
 - [ ] Amass Scanning
 - [ ] BBOT Scanning
