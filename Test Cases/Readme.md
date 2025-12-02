@@ -50,11 +50,11 @@
 - [ ] Active Subdomain Bruteforcing
   - Dnsenum
   - Sublist3r
-- [ ] Permutations
-  - dnsgen
 - [ ] Live Hosts
   - httprobe
   - httpx
+- [ ] Permutations
+  - dnsgen
 - [ ] Screenshots
   - Eyewitness
   - gowitness
